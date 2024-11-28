@@ -28,7 +28,7 @@ async function main() {
         chainId,
         wallet,
         creds,
-        SignatureType.POLY_PROXY,
+        SignatureType.PEDONE_PROXY,
         proxyWalletAddress,
     );
 
@@ -39,7 +39,7 @@ async function main() {
         chainId,
         wallet,
         creds,
-        SignatureType.POLY_GNOSIS_SAFE,
+        SignatureType.PEDONE_GNOSIS_SAFE,
         gnosisSafeAddress,
     );
 }

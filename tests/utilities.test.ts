@@ -30,7 +30,7 @@ describe("utilities", () => {
                     expiration: "0",
                     nonce: "1",
                     feeRateBps: "100",
-                    signatureType: SignatureType.POLY_GNOSIS_SAFE,
+                    signatureType: SignatureType.PEDONE_GNOSIS_SAFE,
                     signature: "0x",
                 },
                 "aaaa-bbbb-cccc-dddd",
@@ -74,7 +74,7 @@ describe("utilities", () => {
                     expiration: "0",
                     nonce: "1",
                     feeRateBps: "100",
-                    signatureType: SignatureType.POLY_GNOSIS_SAFE,
+                    signatureType: SignatureType.PEDONE_GNOSIS_SAFE,
                     signature: "0x",
                 },
                 "aaaa-bbbb-cccc-dddd",
@@ -118,7 +118,7 @@ describe("utilities", () => {
                     expiration: "0",
                     nonce: "1",
                     feeRateBps: "100",
-                    signatureType: SignatureType.POLY_GNOSIS_SAFE,
+                    signatureType: SignatureType.PEDONE_GNOSIS_SAFE,
                     signature: "0x",
                 },
                 "aaaa-bbbb-cccc-dddd",
@@ -162,7 +162,7 @@ describe("utilities", () => {
                     expiration: "0",
                     nonce: "1",
                     feeRateBps: "100",
-                    signatureType: SignatureType.POLY_PROXY,
+                    signatureType: SignatureType.PEDONE_PROXY,
                     signature: "0x",
                 },
                 "aaaa-bbbb-cccc-dddd",
@@ -206,7 +206,7 @@ describe("utilities", () => {
                     expiration: "0",
                     nonce: "1",
                     feeRateBps: "100",
-                    signatureType: SignatureType.POLY_GNOSIS_SAFE,
+                    signatureType: SignatureType.PEDONE_GNOSIS_SAFE,
                     signature: "0x",
                 },
                 "aaaa-bbbb-cccc-dddd",
@@ -293,7 +293,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -304,7 +304,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -337,7 +337,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -348,7 +348,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -425,7 +425,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -436,7 +436,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -469,7 +469,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -480,7 +480,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -556,7 +556,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -566,7 +566,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -599,7 +599,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -609,7 +609,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -685,7 +685,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -695,7 +695,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -728,7 +728,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -738,7 +738,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -813,7 +813,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -822,7 +822,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -855,7 +855,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -864,7 +864,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.1", negRisk: false },
@@ -953,7 +953,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -964,7 +964,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -997,7 +997,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1008,7 +1008,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1085,7 +1085,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1096,7 +1096,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1129,7 +1129,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1140,7 +1140,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1216,7 +1216,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1226,7 +1226,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1259,7 +1259,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1269,7 +1269,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1345,7 +1345,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1355,7 +1355,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1388,7 +1388,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1398,7 +1398,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1473,7 +1473,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1482,7 +1482,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1515,7 +1515,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -1524,7 +1524,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.01", negRisk: false },
@@ -1613,7 +1613,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -1624,7 +1624,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -1657,7 +1657,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -1668,7 +1668,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -1745,7 +1745,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -1756,7 +1756,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -1789,7 +1789,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -1800,7 +1800,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -1876,7 +1876,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -1886,7 +1886,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -1919,7 +1919,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -1929,7 +1929,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -2005,7 +2005,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -2015,7 +2015,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -2048,7 +2048,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -2058,7 +2058,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -2133,7 +2133,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -2142,7 +2142,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -2175,7 +2175,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -2184,7 +2184,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.001", negRisk: false },
@@ -2273,7 +2273,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2284,7 +2284,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2317,7 +2317,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2328,7 +2328,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2405,7 +2405,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2416,7 +2416,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2449,7 +2449,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2460,7 +2460,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2536,7 +2536,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2546,7 +2546,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2579,7 +2579,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2589,7 +2589,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2665,7 +2665,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2675,7 +2675,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2708,7 +2708,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2718,7 +2718,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2793,7 +2793,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2802,7 +2802,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2835,7 +2835,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -2844,7 +2844,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.0001", negRisk: false },
@@ -2935,7 +2935,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -2946,7 +2946,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -2979,7 +2979,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -2990,7 +2990,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3067,7 +3067,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3078,7 +3078,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3111,7 +3111,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3122,7 +3122,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3198,7 +3198,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3208,7 +3208,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3241,7 +3241,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3251,7 +3251,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3327,7 +3327,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3337,7 +3337,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3370,7 +3370,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3380,7 +3380,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3455,7 +3455,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3464,7 +3464,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3497,7 +3497,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.5,
@@ -3506,7 +3506,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.1", negRisk: true },
@@ -3595,7 +3595,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3606,7 +3606,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -3639,7 +3639,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3650,7 +3650,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -3727,7 +3727,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3738,7 +3738,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -3771,7 +3771,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3782,7 +3782,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -3858,7 +3858,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3868,7 +3868,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -3901,7 +3901,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3911,7 +3911,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -3987,7 +3987,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -3997,7 +3997,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -4030,7 +4030,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -4040,7 +4040,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -4115,7 +4115,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -4124,7 +4124,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -4157,7 +4157,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.05,
@@ -4166,7 +4166,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.01", negRisk: true },
@@ -4255,7 +4255,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4266,7 +4266,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4299,7 +4299,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4310,7 +4310,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4387,7 +4387,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4398,7 +4398,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4431,7 +4431,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4442,7 +4442,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4518,7 +4518,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4528,7 +4528,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4561,7 +4561,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4571,7 +4571,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4647,7 +4647,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4657,7 +4657,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4690,7 +4690,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4700,7 +4700,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4775,7 +4775,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4784,7 +4784,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4817,7 +4817,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.005,
@@ -4826,7 +4826,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.001", negRisk: true },
@@ -4915,7 +4915,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_PROXY", async () => {
+                    it("GTD BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -4926,7 +4926,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -4959,7 +4959,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTD BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -4970,7 +4970,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5047,7 +5047,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_PROXY", async () => {
+                    it("GTD SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5058,7 +5058,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5091,7 +5091,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTD SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTD SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5102,7 +5102,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5178,7 +5178,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_PROXY", async () => {
+                    it("GTC BUY PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5188,7 +5188,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5221,7 +5221,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC BUY POLY_GNOSIS_SAFE", async () => {
+                    it("GTC BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5231,7 +5231,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5307,7 +5307,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_PROXY", async () => {
+                    it("GTC SELL PEDONE_PROXY", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5317,7 +5317,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5350,7 +5350,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("GTC SELL POLY_GNOSIS_SAFE", async () => {
+                    it("GTC SELL PEDONE_GNOSIS_SAFE", async () => {
                         const userOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5360,7 +5360,7 @@ describe("utilities", () => {
                         const signedOrder = await createOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5435,7 +5435,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_PROXY", async () => {
+                    it("FOK BUY PEDONE_PROXY", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5444,7 +5444,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_PROXY,
+                            SignatureType.PEDONE_PROXY,
                             address,
                             userMarketOrder,
                             { tickSize: "0.0001", negRisk: true },
@@ -5477,7 +5477,7 @@ describe("utilities", () => {
                         });
                     });
 
-                    it("FOK BUY POLY_GNOSIS_SAFE", async () => {
+                    it("FOK BUY PEDONE_GNOSIS_SAFE", async () => {
                         const userMarketOrder = {
                             tokenID: token,
                             price: 0.0005,
@@ -5486,7 +5486,7 @@ describe("utilities", () => {
                         const signedOrder = await createMarketBuyOrder(
                             wallet,
                             chainId,
-                            SignatureType.POLY_GNOSIS_SAFE,
+                            SignatureType.PEDONE_GNOSIS_SAFE,
                             address,
                             userMarketOrder,
                             { tickSize: "0.0001", negRisk: true },

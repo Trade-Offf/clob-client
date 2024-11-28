@@ -270,7 +270,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.1"],
                 );
@@ -297,7 +297,7 @@ describe("helpers", () => {
                 expect(signedOrder.expiration).equal("0");
                 expect(signedOrder.nonce).equal("0");
                 expect(signedOrder.feeRateBps).equal("0");
-                expect(signedOrder.signatureType).equal(SignatureType.POLY_PROXY);
+                expect(signedOrder.signatureType).equal(SignatureType.PEDONE_PROXY);
                 expect(signedOrder.signature).not.empty;
             });
 
@@ -314,7 +314,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.01"],
                 );
@@ -341,7 +341,7 @@ describe("helpers", () => {
                 expect(signedOrder.expiration).equal("0");
                 expect(signedOrder.nonce).equal("0");
                 expect(signedOrder.feeRateBps).equal("0");
-                expect(signedOrder.signatureType).equal(SignatureType.POLY_PROXY);
+                expect(signedOrder.signatureType).equal(SignatureType.PEDONE_PROXY);
                 expect(signedOrder.signature).not.empty;
             });
 
@@ -358,7 +358,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.001"],
                 );
@@ -385,7 +385,7 @@ describe("helpers", () => {
                 expect(signedOrder.expiration).equal("0");
                 expect(signedOrder.nonce).equal("0");
                 expect(signedOrder.feeRateBps).equal("0");
-                expect(signedOrder.signatureType).equal(SignatureType.POLY_PROXY);
+                expect(signedOrder.signatureType).equal(SignatureType.PEDONE_PROXY);
                 expect(signedOrder.signature).not.empty;
             });
 
@@ -402,7 +402,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                     "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.0001"],
                 );
@@ -429,7 +429,7 @@ describe("helpers", () => {
                 expect(signedOrder.expiration).equal("0");
                 expect(signedOrder.nonce).equal("0");
                 expect(signedOrder.feeRateBps).equal("0");
-                expect(signedOrder.signatureType).equal(SignatureType.POLY_PROXY);
+                expect(signedOrder.signatureType).equal(SignatureType.PEDONE_PROXY);
                 expect(signedOrder.signature).not.empty;
             });
         });
@@ -802,7 +802,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0x0000000000000000000000000000000000000001",
                     "0x0000000000000000000000000000000000000002",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.1"],
                 );
@@ -817,7 +817,7 @@ describe("helpers", () => {
                     nonce: "0",
                     signer: "0x0000000000000000000000000000000000000001",
                     expiration: "0",
-                    signatureType: SignatureType.POLY_PROXY,
+                    signatureType: SignatureType.PEDONE_PROXY,
                 });
             });
 
@@ -834,7 +834,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0x0000000000000000000000000000000000000001",
                     "0x0000000000000000000000000000000000000002",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.01"],
                 );
@@ -849,7 +849,7 @@ describe("helpers", () => {
                     nonce: "0",
                     signer: "0x0000000000000000000000000000000000000001",
                     expiration: "0",
-                    signatureType: SignatureType.POLY_PROXY,
+                    signatureType: SignatureType.PEDONE_PROXY,
                 });
             });
 
@@ -866,7 +866,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0x0000000000000000000000000000000000000001",
                     "0x0000000000000000000000000000000000000002",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.001"],
                 );
@@ -881,7 +881,7 @@ describe("helpers", () => {
                     nonce: "0",
                     signer: "0x0000000000000000000000000000000000000001",
                     expiration: "0",
-                    signatureType: SignatureType.POLY_PROXY,
+                    signatureType: SignatureType.PEDONE_PROXY,
                 });
             });
 
@@ -898,7 +898,7 @@ describe("helpers", () => {
                 const orderData: OrderData = await buildOrderCreationArgs(
                     "0x0000000000000000000000000000000000000001",
                     "0x0000000000000000000000000000000000000002",
-                    SignatureType.POLY_PROXY,
+                    SignatureType.PEDONE_PROXY,
                     order,
                     ROUNDING_CONFIG["0.0001"],
                 );
@@ -913,7 +913,7 @@ describe("helpers", () => {
                     nonce: "0",
                     signer: "0x0000000000000000000000000000000000000001",
                     expiration: "0",
-                    signatureType: SignatureType.POLY_PROXY,
+                    signatureType: SignatureType.PEDONE_PROXY,
                 });
             });
         });
@@ -1939,7 +1939,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.1", negRisk: false },
@@ -1956,7 +1956,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
 
@@ -1973,7 +1973,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.01", negRisk: false },
@@ -1990,7 +1990,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
 
@@ -2007,7 +2007,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.001", negRisk: false },
@@ -2024,7 +2024,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
 
@@ -2041,7 +2041,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.0001", negRisk: false },
@@ -2058,7 +2058,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
             });
@@ -2229,7 +2229,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.1", negRisk: true },
@@ -2246,7 +2246,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
 
@@ -2263,7 +2263,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.01", negRisk: true },
@@ -2280,7 +2280,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
 
@@ -2297,7 +2297,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.001", negRisk: true },
@@ -2314,7 +2314,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
 
@@ -2331,7 +2331,7 @@ describe("helpers", () => {
                     const signedOrder = await createOrder(
                         wallet,
                         Chain.AMOY,
-                        SignatureType.POLY_GNOSIS_SAFE,
+                        SignatureType.PEDONE_GNOSIS_SAFE,
                         "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
                         order,
                         { tickSize: "0.0001", negRisk: true },
@@ -2348,7 +2348,7 @@ describe("helpers", () => {
                     expect(signedOrder.expiration).equal("0");
                     expect(signedOrder.nonce).equal("0");
                     expect(signedOrder.feeRateBps).equal("0");
-                    expect(signedOrder.signatureType).equal(SignatureType.POLY_GNOSIS_SAFE);
+                    expect(signedOrder.signatureType).equal(SignatureType.PEDONE_GNOSIS_SAFE);
                     expect(signedOrder.signature).not.empty;
                 });
             });

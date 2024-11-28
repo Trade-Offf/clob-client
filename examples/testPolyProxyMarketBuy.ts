@@ -48,7 +48,7 @@ async function main() {
         chainId,
         wallet,
         creds,
-        SignatureType.POLY_PROXY,
+        SignatureType.PEDONE_PROXY,
         "0xb57af06b944df7df17b9661652f72b954286ee07",
     );
 

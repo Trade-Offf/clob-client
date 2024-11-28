@@ -22,10 +22,10 @@ export const createL1Headers = async (
     const address = await signer.getAddress();
 
     const headers = {
-        POLY_ADDRESS: address,
-        POLY_SIGNATURE: sig,
-        POLY_TIMESTAMP: `${ts}`,
-        POLY_NONCE: `${n}`,
+        PEDONE_ADDRESS: address,
+        PEDONE_SIGNATURE: sig,
+        PEDONE_TIMESTAMP: `${ts}`,
+        PEDONE_NONCE: `${n}`,
     };
     return headers;
 };
@@ -51,11 +51,11 @@ export const createL2Headers = async (
     );
 
     const headers = {
-        POLY_ADDRESS: address,
-        POLY_SIGNATURE: sig,
-        POLY_TIMESTAMP: `${ts}`,
-        POLY_API_KEY: creds.key,
-        POLY_PASSPHRASE: creds.passphrase,
+        PEDONE_ADDRESS: address,
+        PEDONE_SIGNATURE: sig,
+        PEDONE_TIMESTAMP: `${ts}`,
+        PEDONE_API_KEY: creds.key,
+        PEDONE_PASSPHRASE: creds.passphrase,
     };
 
     return headers;
