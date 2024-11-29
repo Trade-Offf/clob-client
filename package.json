@@ -1,5 +1,5 @@
 {
-    "name": "@prediction-one/clob-client",
+    "name": "pedone-clob-client",
     "version": "1.0.0",
     "description": "",
     "main": "dist/index.js",

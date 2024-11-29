@@ -916,26 +916,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pkgjs/parseargs@npm:^0.11.0":
-  version: 0.11.0
-  resolution: "@pkgjs/parseargs@npm:0.11.0"
-  checksum: 6ad6a00fc4f2f2cfc6bff76fb1d88b8ee20bc0601e18ebb01b6d4be583733a860239a521a7fbca73b612e66705078809483549d2b18f370eb346c5155c8e4a0f
-  languageName: node
-  linkType: hard
-
-"@polymarket/order-utils@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@polymarket/order-utils@npm:2.1.0"
-  dependencies:
-    "@metamask/eth-sig-util": ^5.0.0
-    ethers: ^5.7.1
-  checksum: 751036e2bcea3c542417fbed1cd81fd1c75481594135b628949449e750cb3f5fdb8e71bcd4129ee2ded175e3da5187709d2ad9ced5808c652cf4a3023f19c1e4
-  languageName: node
-  linkType: hard
-
-"@prediction-one/clob-client@workspace:.":
+"@pedone/clob-client@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@prediction-one/clob-client@workspace:."
+  resolution: "@pedone/clob-client@workspace:."
   dependencies:
     "@polymarket/order-utils": ^2.1.0
     "@types/chai": ^4.3.3
@@ -970,6 +953,23 @@ __metadata:
     ws: ^8.11.0
   languageName: unknown
   linkType: soft
+
+"@pkgjs/parseargs@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "@pkgjs/parseargs@npm:0.11.0"
+  checksum: 6ad6a00fc4f2f2cfc6bff76fb1d88b8ee20bc0601e18ebb01b6d4be583733a860239a521a7fbca73b612e66705078809483549d2b18f370eb346c5155c8e4a0f
+  languageName: node
+  linkType: hard
+
+"@polymarket/order-utils@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@polymarket/order-utils@npm:2.1.0"
+  dependencies:
+    "@metamask/eth-sig-util": ^5.0.0
+    ethers: ^5.7.1
+  checksum: 751036e2bcea3c542417fbed1cd81fd1c75481594135b628949449e750cb3f5fdb8e71bcd4129ee2ded175e3da5187709d2ad9ced5808c652cf4a3023f19c1e4
+  languageName: node
+  linkType: hard
 
 "@scure/base@npm:~1.1.0":
   version: 1.1.1
