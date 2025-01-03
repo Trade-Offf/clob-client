@@ -26,11 +26,11 @@ describe("headers", () => {
             expect(l1Headers).not.null;
             expect(l1Headers).not.undefined;
 
-            expect(l1Headers.PEDONE_ADDRESS).equal(wallet.address);
-            expect(l1Headers.PEDONE_SIGNATURE).not.empty;
-            expect(l1Headers.PEDONE_TIMESTAMP).not.empty;
-            expect(parseInt(l1Headers.PEDONE_TIMESTAMP) <= Math.floor(Date.now() / 1000)).true;
-            expect(l1Headers.PEDONE_NONCE).equal("0");
+            expect(l1Headers["PEDONE-ADDRESS"]).equal(wallet.address);
+            expect(l1Headers["PEDONE-SIGNATURE"]).not.empty;
+            expect(l1Headers["PEDONE-TIMESTAMP"]).not.empty;
+            expect(parseInt(l1Headers["PEDONE-TIMESTAMP"]) <= Math.floor(Date.now() / 1000)).true;
+            expect(l1Headers["PEDONE-NONCE"]).equal("0");
         });
 
         it("nonce", async () => {
@@ -38,11 +38,11 @@ describe("headers", () => {
             expect(l1Headers).not.null;
             expect(l1Headers).not.undefined;
 
-            expect(l1Headers.PEDONE_ADDRESS).equal(wallet.address);
-            expect(l1Headers.PEDONE_SIGNATURE).not.empty;
-            expect(l1Headers.PEDONE_TIMESTAMP).not.empty;
-            expect(parseInt(l1Headers.PEDONE_TIMESTAMP) <= Math.floor(Date.now() / 1000)).true;
-            expect(l1Headers.PEDONE_NONCE).equal("1012");
+            expect(l1Headers["PEDONE-ADDRESS"]).equal(wallet.address);
+            expect(l1Headers["PEDONE-SIGNATURE"]).not.empty;
+            expect(l1Headers["PEDONE-TIMESTAMP"]).not.empty;
+            expect(parseInt(l1Headers["PEDONE-TIMESTAMP"]) <= Math.floor(Date.now() / 1000)).true;
+            expect(l1Headers["PEDONE-NONCE"]).equal("1012");
         });
     });
 
@@ -55,12 +55,12 @@ describe("headers", () => {
             expect(l2Headers).not.null;
             expect(l2Headers).not.undefined;
 
-            expect(l2Headers.PEDONE_ADDRESS).equal(wallet.address);
-            expect(l2Headers.PEDONE_SIGNATURE).not.empty;
-            expect(l2Headers.PEDONE_TIMESTAMP).not.empty;
-            expect(parseInt(l2Headers.PEDONE_TIMESTAMP) <= Math.floor(Date.now() / 1000)).true;
-            expect(l2Headers.PEDONE_API_KEY).equal(creds.key);
-            expect(l2Headers.PEDONE_PASSPHRASE).equal(creds.passphrase);
+            expect(l2Headers["PEDONE-ADDRESS"]).equal(wallet.address);
+            expect(l2Headers["PEDONE-SIGNATURE"]).not.empty;
+            expect(l2Headers["PEDONE-TIMESTAMP"]).not.empty;
+            expect(parseInt(l2Headers["PEDONE-TIMESTAMP"]) <= Math.floor(Date.now() / 1000)).true;
+            expect(l2Headers["PEDONE-API-KEY"]).equal(creds.key);
+            expect(l2Headers["PEDONE-PASSPHRASE"]).equal(creds.passphrase);
         });
 
         it("body", async () => {
@@ -72,12 +72,12 @@ describe("headers", () => {
             expect(l2Headers).not.null;
             expect(l2Headers).not.undefined;
 
-            expect(l2Headers.PEDONE_ADDRESS).equal(wallet.address);
-            expect(l2Headers.PEDONE_SIGNATURE).not.empty;
-            expect(l2Headers.PEDONE_TIMESTAMP).not.empty;
-            expect(parseInt(l2Headers.PEDONE_TIMESTAMP) <= Math.floor(Date.now() / 1000)).true;
-            expect(l2Headers.PEDONE_API_KEY).equal(creds.key);
-            expect(l2Headers.PEDONE_PASSPHRASE).equal(creds.passphrase);
+            expect(l2Headers["PEDONE-ADDRESS"]).equal(wallet.address);
+            expect(l2Headers["PEDONE-SIGNATURE"]).not.empty;
+            expect(l2Headers["PEDONE-TIMESTAMP"]).not.empty;
+            expect(parseInt(l2Headers["PEDONE-TIMESTAMP"]) <= Math.floor(Date.now() / 1000)).true;
+            expect(l2Headers["PEDONE-API-KEY"]).equal(creds.key);
+            expect(l2Headers["PEDONE-PASSPHRASE"]).equal(creds.passphrase);
         });
     });
 });

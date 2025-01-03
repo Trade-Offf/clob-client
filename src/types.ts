@@ -21,19 +21,19 @@ export interface L2HeaderArgs {
 
 // EIP712 sig verification
 export interface L1PolyHeader extends AxiosRequestHeaders {
-    PEDONE_ADDRESS: string;
-    PEDONE_SIGNATURE: string;
-    PEDONE_TIMESTAMP: string;
-    PEDONE_NONCE: string;
+    "PEDONE-ADDRESS": string;
+    "PEDONE-SIGNATURE": string;
+    "PEDONE-TIMESTAMP": string;
+    "PEDONE-NONCE": string;
 }
 
 // API key verification
 export interface L2PolyHeader extends AxiosRequestHeaders {
-    PEDONE_ADDRESS: string;
-    PEDONE_SIGNATURE: string;
-    PEDONE_TIMESTAMP: string;
-    PEDONE_API_KEY: string;
-    PEDONE_PASSPHRASE: string;
+    "PEDONE-ADDRESS": string;
+    "PEDONE-SIGNATURE": string;
+    "PEDONE-TIMESTAMP": string;
+    "PEDONE-API-KEY": string;
+    "PEDONE-PASSPHRASE": string;
 }
 
 export enum Side {

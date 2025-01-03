@@ -22,10 +22,10 @@ export const createL1Headers = async (
     const address = await signer.getAddress();
 
     const headers = {
-        PEDONE_ADDRESS: address,
-        PEDONE_SIGNATURE: sig,
-        PEDONE_TIMESTAMP: `${ts}`,
-        PEDONE_NONCE: `${n}`,
+        "PEDONE-ADDRESS": address,
+        "PEDONE-SIGNATURE": sig,
+        "PEDONE-TIMESTAMP": `${ts}`,
+        "PEDONE-NONCE": `${n}`,
     };
     return headers;
 };
@@ -51,11 +51,11 @@ export const createL2Headers = async (
     );
 
     const headers = {
-        PEDONE_ADDRESS: address,
-        PEDONE_SIGNATURE: sig,
-        PEDONE_TIMESTAMP: `${ts}`,
-        PEDONE_API_KEY: creds.key,
-        PEDONE_PASSPHRASE: creds.passphrase,
+        "PEDONE-ADDRESS": address,
+        "PEDONE-SIGNATURE": sig,
+        "PEDONE-TIMESTAMP": `${ts}`,
+        "PEDONE-API-KEY": creds.key,
+        "PEDONE-PASSPHRASE": creds.passphrase,
     };
 
     return headers;
